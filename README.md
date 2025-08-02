@@ -13,7 +13,7 @@ A simple, stylish, and responsive **To-Do List web application** built using **H
 
 ## 📸 Screenshot
 
-aa<img width="1905" height="909" alt="image" src="https://github.com/user-attachments/assets/7738ba34-80ad-4dd7-bd97-9381cbf9b65f" />
+<img width="1905" height="909" alt="image" src="https://github.com/user-attachments/assets/7738ba34-80ad-4dd7-bd97-9381cbf9b65f" />
 
 
 ## 📂 Folder Structure

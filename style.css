@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #F3E2D4;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.app {
+  width: 100%;
+  max-width: 600px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #17313E;
+}
+
+#task-form {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  background: #1e1e1e;
+  padding: 15px 20px;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  z-index: 10;
+}
+
+#task-form input {
+  background: #2c2c2c;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 15px;
+}
+
+#task-form input[type="text"] {
+  flex: 2;
+  width: 200px;
+}
+
+#task-form input[type="datetime-local"] {
+  flex: 1;
+}
+
+#task-form button {
+  background: #00c896;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#task-form button:hover {
+  background: #00a87d;
+}
+
+#task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-bottom: 100px;
+}
+
+.task-card {
+  background: #415E72;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.task-card:hover {
+  transform: translateY(-2px);
+}
+
+.task-info {
+  max-width: 70%;
+}
+
+.task-info p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.task-info small {
+  color: #aaa;
+  font-size: 12px;
+}
+
+.task-card.completed .task-info p {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.actions button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #ccc;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.actions button:hover {
+  color: #00c896;
+}
